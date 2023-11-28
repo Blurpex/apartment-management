@@ -5,6 +5,13 @@ import java.util.Date;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import lombok.*;
+
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
+@ToString
 @Document(collection = "users")
 public class User {
 
